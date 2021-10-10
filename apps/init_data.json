@@ -1,0 +1,128 @@
+[
+    {
+        "model": "auth.user",
+        "fields": {
+            "id": 1,
+            "password": "pbkdf2_sha256$260000$MJIuxeMTLj3VgKj6wTmPdA$obFFn2EwdcuPRK8gxSFZhrX5HdXGJkFpTG1mGdME7Qk=",
+            "last_login": "2021-10-09 16:47:11.403344+07",
+            "is_superuser": true,
+            "username": "admin",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-10-09 16:46:53.619036+07"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 1,
+            "title": "First content!",
+            "published_date": "2021-10-01 17:00:00.000000+07",
+            "author": "Phak",
+            "summary": "First content of this website.",
+            "content": "Hello everyone, this is a first content of this website I just developed as a webboard. Hope you guys enjoy reading this!",
+            "status": "published"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 2,
+            "title": "About development",
+            "published_date": "2021-10-02 17:00:00.000000+07",
+            "author": "Phak",
+            "summary": "Details about this website development.",
+            "content": "This website has been developed by Python Django as a backend and Javascript as a frontend.",
+            "status": "published"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 3,
+            "title": "Joke #1",
+            "published_date": "2021-10-03 17:00:00.000000+07",
+            "author": "Phak",
+            "summary": "What’s the best thing about Switzerland?",
+            "content": "What’s the best thing about Switzerland?\nI don’t know, but the flag is a big plus.",
+            "status": "published"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 4,
+            "title": "Hey! Anonymous is here.",
+            "author": "Anonymous",
+            "summary": "Introduction to new author.",
+            "content": "Hello reader! I'm a new author joining this website.\nWhat's my name? I won't tell ya ;)",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 5,
+            "title": "Joke #2",
+            "author": "Anonymous",
+            "summary": "Knock! Knock!",
+            "content": "Knock! Knock!\nWho’s there?\nControl Freak.\nCon…\nOK, now you say, “Control Freak who?”",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 6,
+            "title": "Joke #3",
+            "author": "Anonymous",
+            "summary": "Hear about the new restaurant called Karma?",
+            "content": "Hear about the new restaurant called Karma?\nThere’s no menu: You get what you deserve.",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 7,
+            "title": "Joke #4",
+            "author": "Anonymous",
+            "summary": "How do you drown a hipster?",
+            "content": "How do you drown a hipster?\nThrow him in the mainstream.",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 8,
+            "title": "Joke #5",
+            "author": "Phak",
+            "summary": "A man tells his doctor, “Doc, help me. I’m addicted to Twitter!”",
+            "content": "A man tells his doctor, “Doc, help me. I’m addicted to Twitter!”\nThe doctor replies, “Sorry, I don’t follow you …”",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 9,
+            "title": "Joke #6",
+            "author": "Anonymous",
+            "summary": "What do you call a fake noodle?",
+            "content": "What do you call a fake noodle?\nAn impasta.",
+            "status": "draft"
+        }
+    },
+    {
+        "model": "contents.content",
+        "fields": {
+            "id": 10,
+            "title": "Joke #7",
+            "author": "Anonymous",
+            "summary": "What do you call an apology written in dots and dashes?",
+            "content": "What do you call an apology written in dots and dashes?\nRe-Morse code.",
+            "status": "draft"
+        }
+    }
+]
