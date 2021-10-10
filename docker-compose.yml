@@ -1,0 +1,31 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5433"
+    env_file:
+      - ./.env
+    command: -p 5433
+  redis:
+    image: redis:6-alpine      
+    command: redis-server
+  app:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/build
+    ports:
+      - 8000:8000 # sets the port that maps to internal port in docker container
+    env_file:
+      - ./.env
+    depends_on:
+      - redis
+      - db
+    entrypoint: ["/bin/sh", "./entrypoint.sh"]
+
+volumes:
+  postgres_data:
