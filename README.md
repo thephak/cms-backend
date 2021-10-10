@@ -79,6 +79,7 @@ $ docker-compose up
 $ docker exec -it cms_api-db-1 psql -U postgres 
 $ create database <database_name>;
 $ CREATE USER <user_name> WITH PASSWORD <user_password>;
+$ ALTER USER <user_name> WITH SUPERUSER;
 ```
 5. Kill the current docker process and deploy again. 
 ```
@@ -101,6 +102,7 @@ $ docker-compose up
 $ psql -U postgres
 $ create database <database_name>;
 $ CREATE USER <user_name> WITH PASSWORD <user_password>;
+$ ALTER USER <user_name> WITH SUPERUSER;
 ```
 2. Setup the environment variables in .env file. 
 3. Open terminal and run command in test.bat
